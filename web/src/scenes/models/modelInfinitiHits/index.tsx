@@ -55,16 +55,17 @@ function SimpleInfiniteList() {
       dataLength={total}
       next={getMorePosts}
       hasMore={hasMore}
-      className='flex w-full grid grid-cols-12 gap-5'
-      loader={<Spinner className='h-12 w-12' />}
+      className="flex w-full grid grid-cols-12 gap-5"
+      loader={<Spinner className="h-12 w-12" />}
       endMessage={
         <p style={{ textAlign: "center" }}>
           <b>Yay! You have seen it all</b>
         </p>
-      }>
-      {/* {result.map((post) => (
+      }
+    >
+      {result.map((post) => (
         <Models product={post}></Models>
-      ))} */}
+      ))}
     </InfiniteScroll>
   );
 }

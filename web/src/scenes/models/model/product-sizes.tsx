@@ -1,23 +1,23 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useState } from "react";
 
-import { Button } from '@ui/button/button'
+import { Button } from "@ui/button/button";
 
 export type ProductSizeType = {
-  size: string
-  available: boolean
-}
+  size: string;
+  available: boolean;
+};
 
 export type ProductSizesProps = {
-  sizes: ProductSizeType[]
-}
+  sizes: ProductSizeType[];
+};
 
 export type ProductSizeProps = ProductSizeType & {
-  selected: boolean
-  onClick: (size: string) => void
-}
+  selected: boolean;
+  onClick: (size: string) => void;
+};
 
 function ProductSize({ size, available, selected, onClick }: ProductSizeProps) {
-  const handleClick = useCallback(() => onClick(size), [onClick, size])
+  const handleClick = useCallback(() => onClick(size), [onClick, size]);
   return (
     <li>
       <Button
@@ -30,16 +30,16 @@ function ProductSize({ size, available, selected, onClick }: ProductSizeProps) {
         {size}
       </Button>
     </li>
-  )
+  );
 }
 
 export function ProductSizes({ sizes }: ProductSizesProps) {
-  const [selectedSize, setSelectedSize] = useState('')
+  const [selectedSize, setSelectedSize] = useState("");
   const handleSizeClick = useCallback(
     (newSelectedSize: string) =>
-      setSelectedSize(newSelectedSize === selectedSize ? '' : newSelectedSize),
+      setSelectedSize(newSelectedSize === selectedSize ? "" : newSelectedSize),
     [selectedSize]
-  )
+  );
 
   return (
     <ul className="grid grid-cols-4 gap-3 mt-6">
@@ -53,5 +53,5 @@ export function ProductSizes({ sizes }: ProductSizesProps) {
         />
       ))}
     </ul>
-  )
+  );
 }
