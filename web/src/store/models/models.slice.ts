@@ -26,7 +26,7 @@ const setNumberOfPost = (
   action: PayloadAction<{ posts: any }>
 ) => ({
   ...state,
-  posts: action.payload.posts + 10,
+  posts: action.payload.posts + 11,
 });
 
 const setTotal = (state: any, action: PayloadAction<{ total: any }>) => ({

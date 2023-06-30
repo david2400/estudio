@@ -229,7 +229,7 @@ const Nav = () => {
                             {category.featured.map((item) => (
                               <div
                                 key={item.name}
-                                className="group relative text-sm"
+                                className="group relative text-xl"
                               >
                                 <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                                   <img
@@ -375,7 +375,7 @@ const Nav = () => {
                                   open
                                     ? 'border-darkPurple text-darkPurple'
                                     : 'border-transparent text-white hover:text-darkPurple',
-                                  'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out',
+                                  'relative z-10 -mb-px flex items-center border-b-2 pt-px text-xl font-medium transition-colors duration-200 ease-out',
                                 )}
                               >
                                 {category.name}
@@ -391,7 +391,7 @@ const Nav = () => {
                               leaveFrom="opacity-100"
                               leaveTo="opacity-0"
                             >
-                              <Popover.Panel className="absolute inset-x-0 top-full text-sm text-black z-40">
+                              <Popover.Panel className="absolute inset-x-0 top-full text-xl text-black z-40">
                                 {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                                 <div
                                   className="absolute inset-0 top-1/2 bg-white shadow"
@@ -405,7 +405,7 @@ const Nav = () => {
                                         {category.featured.map((item) => (
                                           <div
                                             key={item.name}
-                                            className="group relative text-base sm:text-sm"
+                                            className="group relative text-base sm:text-xl"
                                           >
                                             <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                                               <img
@@ -433,7 +433,7 @@ const Nav = () => {
                                           </div>
                                         ))}
                                       </div>
-                                      <div className="row-start-1 grid grid-cols-3 gap-y-10 gap-x-8 text-sm z-40">
+                                      <div className="row-start-1 grid grid-cols-3 gap-y-10 gap-x-8 text-xl z-40">
                                         {category.sections.map((section) => (
                                           <div key={section.name}>
                                             <p
@@ -478,7 +478,7 @@ const Nav = () => {
                       <Link
                         key={page.name}
                         href={page.href}
-                        className="flex items-center text-sm font-medium text-white hover:text-darkPurple"
+                        className="flex items-center text-xl font-medium text-white hover:text-darkPurple"
                       >
                         {page.name}
                       </Link>
@@ -491,7 +491,7 @@ const Nav = () => {
                     {/* Profile */}
                     <div className="ml-4 flow-root lg:ml-6"></div>
                     <button
-                      className="text-sm font-medium text-white hover:text-darkPurple"
+                      className="text-xl font-medium text-white hover:text-darkPurple"
                       onClick={() => {
                         setopenModal(!openModal);
                       }}
@@ -500,7 +500,7 @@ const Nav = () => {
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
 
                     <button
-                      className="text-sm font-medium text-white hover:text-darkPurple"
+                      className="text-xl font-medium text-white hover:text-darkPurple"
                       onClick={() => {
                         setopenRegister(!openRegister);
                       }}
@@ -542,7 +542,7 @@ const Nav = () => {
                         className="h-6 w-6 flex-shrink-0 text-white group-hover:text-darkPurple"
                         aria-hidden="true"
                       />
-                      <span className="ml-2 text-sm font-medium text-white group-hover:text-darkPurple">
+                      <span className="ml-2 text-xl font-medium text-white group-hover:text-darkPurple">
                         0
                       </span>
                       <span className="sr-only">Profile</span>

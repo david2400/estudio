@@ -12,7 +12,6 @@ import {
 import { ImageModel } from "@scenes/models/model/model-image";
 const Models = ({ product }: any) => {
   const { brad, description, images } = product;
-  console.log(images);
   return (
     <Card className="col-span-4 mt-6 w-full">
       <CardHeader color="blue-gray" className="relative">
@@ -25,7 +24,7 @@ const Models = ({ product }: any) => {
         <Typography>{description}</Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <Button className="">Detalles</Button>
+        <Button className="bg-fuchsia-300">Detalles</Button>
       </CardFooter>
     </Card>
   );

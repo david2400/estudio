@@ -6,7 +6,7 @@ import SimpleInfiniteList from '@scenes/models/modelInfinitiHits';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center p-12 bg-[#ffffff19]">
       <SimpleInfiniteList></SimpleInfiniteList>
       {/* <ContactUs></ContactUs> */}
     </main>
