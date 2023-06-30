@@ -1,3 +1,11 @@
+import { Button, Typography, List, ListItem } from '@material-tailwind/react';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaWhatsapp,
+} from 'react-icons/fa';
+
 const Footer = () => (
   <footer className="bg-cyan-400 text-white">
     <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
@@ -7,24 +15,33 @@ const Footer = () => (
       >
         <span className="text-teal-400">Free</span> until you're ready to launch
       </h1>
-      <div>
-        <input
-          type="text"
-          placeholder="Enter Your ph.no"
-          className="text-gray-800
-           sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
-        />
-        <button
-          className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins]
-           rounded-md text-white md:w-auto w-full"
-        >
-          Request Code
-        </button>
+      <div className="flex flex-col px-5">
+        <Typography variant="h1" className="text-center text-2xl">
+          Nombre de la empresa
+        </Typography>
+        <div className="flex gap-3 py-3">
+          <Button color="blue" className="hover:bg-blue-600 rounded-full">
+            <FaFacebookF className="text-white w-7 h-7"></FaFacebookF>
+          </Button>
+          <Button color="light-blue" className="hover:bg-sky-500 rounded-full">
+            <FaTwitter className="text-white w-7 h-7"></FaTwitter>
+          </Button>
+          <Button className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-full shadow">
+            <FaInstagram className="text-white w-7 h-7"></FaInstagram>
+          </Button>
+          <Button color="green" className="hover:bg-sky-500 rounded-full">
+            <FaWhatsapp className="text-white w-7 h-7"></FaWhatsapp>
+          </Button>
+        </div>
+      </div>
+      <div className="flex flex-col">
+       
       </div>
     </div>
+
     <div
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-      text-center pt-2 text-gray-400 text-sm pb-8"
+      text-center pt-2 text-white text-sm pb-8"
     >
       <span>© 2020 Appy. All rights reserved.</span>
       <span>Terms · Privacy Policy</span>

@@ -334,7 +334,7 @@ const Nav = () => {
           </Dialog>
         </Transition.Root>
 
-        <header className="relative bg-fuchsia-300">
+        <header className="relative bg-gradient-to-r from-pink-400 to-red-300">
           <nav
             aria-label="Top"
             className="mx-auto max-w-12xl px-4 sm:px-6 lg:px-8"
