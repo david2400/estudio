@@ -187,7 +187,7 @@ const Nav = () => {
                   <div className='flex px-4 pt-5 pb-2'>
                     <button
                       type='button'
-                      className='-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400'
+                      className='-m-2 inline-flex items-center justify-center rounded-md p-2 text-white'
                       onClick={() => setOpen(false)}>
                       <span className='sr-only'>Close menu</span>
                       <XMarkIcon className='h-6 w-6' aria-hidden='true' />
@@ -205,7 +205,7 @@ const Nav = () => {
                               classNames(
                                 selected
                                   ? "text-indigo-600 border-indigo-600"
-                                  : "text-gray-900 border-transparent",
+                                  : "text-white border-transparent",
                                 "flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium"
                               )
                             }>
@@ -233,7 +233,7 @@ const Nav = () => {
                                 </div>
                                 <Link
                                   href={item.href}
-                                  className='mt-6 block font-medium text-gray-900'>
+                                  className='mt-6 block font-medium text-white'>
                                   <span
                                     className='absolute inset-0 z-10'
                                     aria-hidden='true'
@@ -250,7 +250,7 @@ const Nav = () => {
                             <div key={section.name}>
                               <p
                                 id={`${category.id}-${section.id}-heading-mobile`}
-                                className='font-medium text-gray-900'>
+                                className='font-medium text-white'>
                                 {section.name}
                               </p>
                               <ul
@@ -261,7 +261,7 @@ const Nav = () => {
                                   <li key={item.name} className='flow-root'>
                                     <Link
                                       href={item.href}
-                                      className='-m-2 block p-2 text-gray-500'>
+                                      className='-m-2 block p-2 text-white'>
                                       {item.name}
                                     </Link>
                                   </li>
@@ -279,7 +279,7 @@ const Nav = () => {
                       <div key={page.name} className='flow-root'>
                         <Link
                           href={page.href}
-                          className='-m-2 block p-2 font-medium text-gray-900'>
+                          className='-m-2 block p-2 font-medium text-white'>
                           {page.name}
                         </Link>
                       </div>
@@ -289,7 +289,7 @@ const Nav = () => {
                   <div className='space-y-6 border-t border-gray-200 py-6 px-4'>
                     <div className='flow-root'>
                       <button
-                        className='-m-2 block p-2 font-medium text-gray-900'
+                        className='-m-2 block p-2 font-medium text-white'
                         onClick={() => {
                           setopenModal(!openModal);
                         }}></button>
@@ -297,7 +297,7 @@ const Nav = () => {
                     <div className='flow-root'>
                       <Link
                         href='/'
-                        className='-m-2 block p-2 font-medium text-gray-900'></Link>
+                        className='-m-2 block p-2 font-medium text-white'></Link>
                     </div>
                   </div>
 
@@ -308,7 +308,7 @@ const Nav = () => {
                         alt=''
                         className='block h-auto w-5 flex-shrink-0'
                       />
-                      <span className='ml-3 block text-base font-medium text-gray-900'>
+                      <span className='ml-3 block text-base font-medium text-white'>
                         CAD
                       </span>
                       <span className='sr-only'>, change currency</span>
@@ -320,15 +320,15 @@ const Nav = () => {
           </Dialog>
         </Transition.Root>
 
-        <header className='relative bg-white'>
+        <header className='relative bg-fuchsia-300'>
           <nav
             aria-label='Top'
             className='mx-auto max-w-12xl px-4 sm:px-6 lg:px-8'>
             <div className='border-b border-gray-200'>
-              <div className='flex h-16 items-center'>
+              <div className='flex h-20 items-center'>
                 <button
                   type='button'
-                  className='rounded-md bg-white p-2 text-gray-400 lg:hidden'
+                  className='rounded-md bg-white p-2 text-white lg:hidden'
                   onClick={() => setOpen(true)}>
                   <span className='sr-only'>Open menu</span>
                   <Bars4Icon className='h-6 w-6' aria-hidden='true' />
@@ -358,7 +358,7 @@ const Nav = () => {
                                 className={classNames(
                                   open
                                     ? "border-indigo-600 text-indigo-600"
-                                    : "border-transparent text-gray-700 hover:text-gray-800",
+                                    : "border-transparent text-white hover:text-fuchsia-300",
                                   "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                                 )}>
                                 {category.name}
@@ -373,7 +373,7 @@ const Nav = () => {
                               leave='transition ease-in duration-150'
                               leaveFrom='opacity-100'
                               leaveTo='opacity-0'>
-                              <Popover.Panel className='absolute inset-x-0 top-full text-sm text-gray-500 z-40'>
+                              <Popover.Panel className='absolute inset-x-0 top-full text-sm text-white z-40'>
                                 {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                                 <div
                                   className='absolute inset-0 top-1/2 bg-white shadow'
@@ -397,7 +397,7 @@ const Nav = () => {
                                             </div>
                                             <Link
                                               href={item.href}
-                                              className='mt-6 block font-medium text-gray-900'>
+                                              className='mt-6 block font-medium text-white'>
                                               <span
                                                 className='absolute inset-0 z-10'
                                                 aria-hidden='true'
@@ -417,7 +417,7 @@ const Nav = () => {
                                           <div key={section.name}>
                                             <p
                                               id={`${section.name}-heading`}
-                                              className='font-medium text-gray-900'>
+                                              className='font-medium text-white'>
                                               {section.name}
                                             </p>
                                             <ul
@@ -430,7 +430,7 @@ const Nav = () => {
                                                   className='flex'>
                                                   <Link
                                                     href={item.href}
-                                                    className='hover:text-gray-800'>
+                                                    className='hover:text-fuchsia-300'>
                                                     {item.name}
                                                   </Link>
                                                 </li>
@@ -453,7 +453,7 @@ const Nav = () => {
                       <Link
                         key={page.name}
                         href={page.href}
-                        className='flex items-center text-sm font-medium text-gray-700 hover:text-gray-800'>
+                        className='flex items-center text-sm font-medium text-white hover:text-fuchsia-300'>
                         {page.name}
                       </Link>
                     ))}
@@ -465,7 +465,7 @@ const Nav = () => {
                     {/* Profile */}
                     <div className='ml-4 flow-root lg:ml-6'></div>
                     <button
-                      className='text-sm font-medium text-gray-700 hover:text-gray-800'
+                      className='text-sm font-medium text-white hover:text-fuchsia-300'
                       onClick={() => {
                         setopenModal(!openModal);
                       }}></button>
@@ -473,7 +473,7 @@ const Nav = () => {
                     <span className='h-6 w-px bg-gray-200' aria-hidden='true' />
 
                     <button
-                      className='text-sm font-medium text-gray-700 hover:text-gray-800'
+                      className='text-sm font-medium text-white hover:text-fuchsia-300'
                       onClick={() => {
                         setopenRegister(!openRegister);
                       }}></button>
@@ -495,7 +495,7 @@ const Nav = () => {
                         setopenFavorite(!openFavorite);
                       }}>
                       <StarIcon
-                        className='h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500'
+                        className='h-6 w-6 flex-shrink-0 text-white group-hover:text-white'
                         aria-hidden='true'
                       />
                       <span className='sr-only'>Favorite</span>
@@ -509,10 +509,10 @@ const Nav = () => {
                         setopenCart(!openCart);
                       }}>
                       <ShoppingBagIcon
-                        className='h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500'
+                        className='h-6 w-6 flex-shrink-0 text-white group-hover:text-white'
                         aria-hidden='true'
                       />
-                      <span className='ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800'>
+                      <span className='ml-2 text-sm font-medium text-white group-hover:text-fuchsia-300'>
                         0
                       </span>
                       <span className='sr-only'>Profile</span>

@@ -12,9 +12,10 @@ import {
 import { ImageModel } from "@scenes/models/model/model-image";
 const Models = ({ product }: any) => {
   const { brad, description, images } = product;
+  console.log(images);
   return (
-    <Card className='col-span-6 mt-6 w-96'>
-      <CardHeader color='blue-gray' className='relative h-56'>
+    <Card className='col-span-4 mt-6 w-96'>
+      <CardHeader color='blue-gray' className='relative'>
         <ImageModel images={images} className="h-full"></ImageModel>
       </CardHeader>
       <CardBody>

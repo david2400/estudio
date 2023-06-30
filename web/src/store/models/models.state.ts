@@ -8,6 +8,7 @@ const initialState: IModelState = {
   error: {},
   isError: false,
   result: [],
+  posts: 1,
   limit: 10,
 };
 

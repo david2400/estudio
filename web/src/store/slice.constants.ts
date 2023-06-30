@@ -1,1 +1,1 @@
-export const MODELS = "@MODELS";
+export const MODELS = "@MODEL";

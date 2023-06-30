@@ -13,7 +13,7 @@ const setModel = (state: any, action: PayloadAction<{ result: any }>) => ({
 const addModel = (state: any, action: PayloadAction<{ result: any }>) => {
   //TODO: Reemplazar esto por adiciones inmutables, podria usar la libreria inmutability-helper o parecidas
   const models = [...state.result];
-  const newResult = concat(models, action.payload.result);     
+  const newResult = concat(models, action.payload.result);
 
   return {
     ...state,
@@ -21,16 +21,18 @@ const addModel = (state: any, action: PayloadAction<{ result: any }>) => {
   };
 };
 
-const setLimit = (state: any, action: PayloadAction<{ limit: any }>) => ({
+const setNumberOfPost = (
+  state: any,
+  action: PayloadAction<{ posts: any }>
+) => ({
   ...state,
-  limit: action.payload.limit+10,
+  posts: action.payload.posts + 10,
 });
 
 const setTotal = (state: any, action: PayloadAction<{ total: any }>) => ({
   ...state,
   total: action.payload.total,
 });
-
 
 const setItem = (state: any, action: PayloadAction<{ items: any }>) => ({
   ...state,
@@ -43,15 +45,15 @@ const metaSlice = createSlice({
   reducers: {
     setModels: setModel,
     addModels: addModel,
-    setLimits: setLimit,
+    setNumberOfPosts: setNumberOfPost,
     setItems: setItem,
     setTotals: setTotal,
   },
 });
 
-const { addModels, setModels, setLimits, setItems, setTotals } =
+const { addModels, setModels, setNumberOfPosts, setItems, setTotals } =
   metaSlice.actions;
 
-export { addModels, setModels, setLimits, setItems, setTotals };
+export { addModels, setModels, setNumberOfPosts, setItems, setTotals };
 
 export default metaSlice.reducer;

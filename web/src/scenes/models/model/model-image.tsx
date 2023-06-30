@@ -21,7 +21,7 @@ export function ImageModel({ images, className }: ProductImageProps) {
       slidesPerView={1}>
       {images.map((image) => (
         <SwiperSlide>
-          <img src={image}></img>
+          <img className='w-full h-96' src={image}></img>
         </SwiperSlide>
       ))}
     </Swiper>
