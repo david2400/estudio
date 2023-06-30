@@ -1,1 +1,1 @@
-export const CART = "@CART";
+export const MODELS = "@MODELS";
