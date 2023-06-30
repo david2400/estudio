@@ -13,6 +13,7 @@ module.exports = withMT({
   theme: {
     colors: {
       ...colors,
+      darkPurple: "#420039",
     },
   },
   plugins: [require("@tailwindcss/forms")],

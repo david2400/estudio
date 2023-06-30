@@ -15,11 +15,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Provider store={store}>
       <PersistProvider loading={null} persistor={persistor}>
-          <Layout>
-            <ThemeProvider>
-              <Component {...pageProps} />
-            </ThemeProvider>
-          </Layout>
+        <Layout>
+          <ThemeProvider>
+            <Component {...pageProps} />
+          </ThemeProvider>
+        </Layout>
       </PersistProvider>
     </Provider>
   );
