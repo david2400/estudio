@@ -29,9 +29,11 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "react-infinite-scroll-component": "^6.1.0",
+    "react-intl": "^6.4.4",
     "react-redux": "^8.1.1",
     "redux": "^4.2.1",
     "redux-persist": "^6.0.0",
+    "semantic-ui-react": "^2.1.4",
     "swiper": "^9.4.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.3"
