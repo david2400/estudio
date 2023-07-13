@@ -34,9 +34,7 @@ const Footer = () => (
           </Button>
         </div>
       </div>
-      <div className="flex flex-col">
-       
-      </div>
+      <div className="flex flex-col"></div>
     </div>
 
     <div

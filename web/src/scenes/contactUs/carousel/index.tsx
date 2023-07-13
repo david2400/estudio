@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export function CarouselContactUs() {
   return (
-    <div className="w-full">
+    <div className="w-full hidden lg:block">
       <Swiper
         spaceBetween={30}
         pagination={{
-          type: "progressbar",
+          type: 'progressbar',
         }}
         autoplay={{
           delay: 2500,
